@@ -1,14 +1,41 @@
-* {
-    background-color: #E3CBFF;
-  }
-  div {
-    height: 100vh;
-    position: relative;
-  }
+@font-face {
+  font-family: "msFONT";
+  src: url("../fonts/MS_PAIN.woff") format("truetype");
+}
 
-  img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+/*
+cobalt blue: #0b415a | #c9b546
+pastel purp: 
+*/
+
+html {
+  background-color: #482c5a;
+  /* background-color: #5c3672; */
+}
+
+* {
+  color: #dba4b5;
+  font-family: "msFONT";
+  font-size: 25px;
+}
+
+.center {
+  text-align: center;
+  margin: 10% 25%;
+  /* background-color: white; */
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#link {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+#resizeImg {
+  width: 200px;
+  mix-blend-mode:difference;
+}
