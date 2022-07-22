@@ -4,12 +4,27 @@
 
 */
 
-.blue {
-    background-color: #0b415a;
-    color: #c9b546;
+#blue {
+  background-color: #0b415a;
+  color: #dbb845;
 }
 
-.purp {
-    background-color: #482c5a;
-    color: #dba4b5;
+#purp {
+  background-color: #392550;
+  color: #ff71d0;
+}
+
+#orange {
+  background-color: #30281d;
+  color: #a3ddb9;
+}
+
+#green {
+  background-color: #20311c;
+  color: #ca7e27;
+}
+
+#cream {
+  background-color: #292b2b;
+  color: #f0e2a2;
 }

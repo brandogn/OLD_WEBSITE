@@ -28,9 +28,41 @@ a {
   text-decoration: none;
 }
 
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ==================== Classes/Ids: ==================== */
+
+.main {
+  margin: auto;
+  width: min(1000px, 100%);
+}
+
 .center {
-  margin: 10vh 0px;
+  margin: 10vh 0;
   text-align: center;
+}
+
+.icon {
+  display: flex;
+  height: 50px;
+  width:50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  flex: 1;
+}
+
+nav *:hover, a:hover {
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  display: flex;
 }
 
 #sbImg {
