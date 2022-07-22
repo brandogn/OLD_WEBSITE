@@ -1,0 +1,15 @@
+@keyframes hover-link {
+    
+  from {
+    color: #ff6666;
+  }
+  33% {
+    color: #8bff74;
+  }
+  66% {
+    color: #608aff;
+  }
+  100% {
+    color: #ff6666;
+  }
+}
