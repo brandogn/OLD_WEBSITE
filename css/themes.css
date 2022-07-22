@@ -10,8 +10,13 @@
 }
 
 #purp {
-  background-color: #392550;
-  color: #ff71d0;
+  background-color: #342550;
+  color: #ff8b8b;
+}
+
+#red {
+  background-color: rgb(68, 33, 33);
+  color: #f5db4b;
 }
 
 #orange {
