@@ -59,6 +59,7 @@ img {
 nav *:hover, a:hover {
   /* color: #ffff00; */
   animation: hover-link 1.5s ease-in-out 0s infinite normal none;
+  cursor: help;
 }
 
 nav {
