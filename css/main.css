@@ -6,33 +6,23 @@
   src: url("../fonts/MS_PAIN.woff") format("truetype");
 }
 
+/* ========== General styles ========== */
+
 html {
   background-image: url("../img/paper-texture.png");
   background-blend-mode: multiply;
 }
 
-* {
+body {
   font-family: "MS-Font";
-  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-size: 30px;
   margin: 0.3em;
 }
-
-h1 {
-  font-size: 50px;
-  margin: .6em;
-}
-
-a {
-  color: unset;
-  text-decoration: none;
-}
-
-/* img {
-  pointer-events: none;
-  user-select: none;
-} */
-
-/* ==================== Classes/Ids: ==================== */
 
 .main {
   margin: auto;
@@ -44,10 +34,46 @@ a {
   text-align: center;
 }
 
+/* .buttons-container { 
+} */
+
+h1 {
+  font-size: 50px;
+  margin: 0.6em;
+}
+
+.footer {
+  font-size: 10px;
+}
+
+button {
+  border: unset;
+  background-color: unset;
+  font-family: unset;
+  color: inherit;
+}
+
+* {
+  -webkit-transition: all 0.3s ease;
+}
+
+*:hover {
+  -webkit-transition: all 0.3s ease;
+}
+
+/* ========== Top Nav Bar + Links ========== */
+
+nav {
+  /* font-family: Helvetica, Arial, sans-serif; */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .icon {
   display: flex;
-  height: 50px;
-  width:50px;
+  height: 40px;
+  width: 40px;
   justify-content: center;
   align-items: center;
 }
@@ -56,18 +82,43 @@ a {
   flex: 1;
 }
 
-nav *:hover, a:hover {
-  /* color: #ffff00; */
-  animation: hover-link 1.5s ease-in-out 0s infinite normal none;
+a:hover, button:hover {
+  font-weight: bolder;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.445);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a:hover {
+  letter-spacing: 2px;
+}
+
+/* ========== Color Dropdown Menu ========== */
+
+.icon.color {
+  border-radius: 20px;
+}
+
+icon.color:focus {
+  animation: hover-link 5s linear 0s infinite normal forwards;
   cursor: help;
 }
 
-nav {
-  display: flex;
+/* ========== Image ========== */
+
+img {
+  pointer-events: none;
+  user-select: none;
 }
 
 #sbImg {
   width: 200px;
   mix-blend-mode: difference;
   margin: 25px;
+  /* TODO: fix coloring of strawwwwbery */
 }
+
+/* testing */

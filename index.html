@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="red" lang="en">
+<html id="blue" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,33 +7,43 @@
     <title>B | c0b51c46e4dcde6189e48ec9695fe55efc0ea703</title>
     <link rel="stylesheet" href="css/main.css" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="js/animations.js"></script>
+    <script>
+$( function() {
+    $( "#sbImg" ).draggable();
+  } );
+    </script> -->
   </head>
   <body>
     <div class="main">
       <nav>
-        <a class="icon" id="menu" onclick="console.log('bruh')">≡</a>
+        <button class="icon" id="menu">≡</button>
         <div class="icon divider"></div>
-        <a class="icon" href="#">a</a>
-        <a class="icon" href="#">b</a>
-        <a class="icon" href="#">c</a>
+        <button class="icon color-selector" href="#">⚉</button>
+        <button class="icon" href="#">b</button>
+        <button class="icon" href="#">c</button>
       </nav>
+
+      <div class="drop-down">
+        <button class="icon color" id="blue"></button>
+        <button class="icon color" id="purp"></button>
+        <button class="icon color" id="red"></button>
+        <button class="icon color" id="orange"></button>
+        <button class="icon color" id="green"></button>
+        <button class="icon color" id="cream"></button>
+      </div>
 
       <div class="center">
         <h1>• Brandon Wogn •</h1>
-        <!-- <a class="link" href="index.html">About Me</a>
-      <a class="link" href="index.html">Deez nuts</a>
-      <a class="link" href="index.html">My Projects</a>
-      <a class="link" href="index.html">special</a> -->
-        <p><a href="#">Cobalt</a></p>
-        <p><a href="#">Purp</a></p>
-        <p><a href="#">Orange</a></p>
-        <p><a href="#">Green</a></p>
-        <p><a href="#">Cream</a></p>
+        <p><a href="#">About Me</a></p>
+        <p><a href="#">My Projects</a></p>
+        <p><a href="#">Art</a></p>
+        <p><a href="#">Special</a></p>
         <img id="sbImg" src="img/strawberry.png" alt="cat" />
       </div>
+
+      <div class="footer">© b-wong</div>
     </div>
   </body>
 </html>
