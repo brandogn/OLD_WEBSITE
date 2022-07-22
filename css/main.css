@@ -1,41 +1,40 @@
+@import url("themes.css");
+
 @font-face {
-  font-family: "msFONT";
+  font-family: "MS-Font";
   src: url("../fonts/MS_PAIN.woff") format("truetype");
 }
 
-/*
-cobalt blue: #0b415a | #c9b546
-pastel purp: 
-*/
-
 html {
-  background-color: #482c5a;
-  /* background-color: #5c3672; */
+  background-image: url("../img/paper-texture.png");
+  background-blend-mode: multiply;
 }
 
 * {
-  color: #dba4b5;
-  font-family: "msFONT";
-  font-size: 25px;
-}
-
-.center {
-  text-align: center;
-  margin: 10% 25%;
-  /* background-color: white; */
+  font-family: "MS-Font";
+  font-size: 35px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
-#link {
-  display: block;
+p {
+  margin: 0.3em;
+}
+
+a {
+  color: unset;
   text-decoration: none;
-  padding: 0.5em;
 }
 
-#resizeImg {
+.center {
+  margin: 10vh 0px;
+  text-align: center;
+}
+
+#sbImg {
   width: 200px;
-  mix-blend-mode:difference;
+  mix-blend-mode: difference;
+  margin: 25px;
 }

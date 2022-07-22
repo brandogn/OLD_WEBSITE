@@ -1,0 +1,15 @@
+/* ========== Colors: ==========
+  cobalt blue: #0b415a | #c9b546
+  pastel purp: #482c5a | #dba4b5
+
+*/
+
+.blue {
+    background-color: #0b415a;
+    color: #c9b546;
+}
+
+.purp {
+    background-color: #482c5a;
+    color: #dba4b5;
+}
