@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html id="blue" lang="en">
+<html id="green" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B | c0b51c46e4dcde6189e48ec9695fe55efc0ea703</title>
-    <link rel="stylesheet" href="css/main.css" />
-
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-$( function() {
-    $( "#sbImg" ).draggable();
-  } );
-    </script> -->
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <div class="main">
-      <nav>
-        <button class="icon" id="menu">≡</button>
-        <div class="icon divider"></div>
-        <button class="icon color-selector" href="#">⚉</button>
-        <button class="icon" href="#">b</button>
-        <button class="icon" href="#">c</button>
-      </nav>
-<!-- 
-      <div class="drop-down">
-        <button class="icon color" id="blue"></button>
-        <button class="icon color" id="purp"></button>
-        <button class="icon color" id="red"></button>
-        <button class="icon color" id="orange"></button>
-        <button class="icon color" id="green"></button>
-        <button class="icon color" id="cream"></button>
-      </div> -->
+      <!-- Top Bar -->
+      <nav class="top-bar">
+        <button class="icon color-selector">≡</button>
+        <div class="dropdown-content colors hidden">
+          <button class="icon color" id="blue">⚉</button>
+          <button class="icon color" id="purp">⚉</button>
+          <button class="icon color" id="red">⚉</button>
+          <button class="icon color" id="orange">⚉</button>
+          <button class="icon color" id="green">⚉</button>
+          <button class="icon color" id="cream">⚉</button>
+        </div>
 
-      <div class="center">
+        <div class="icon divider"></div>
+
+        <a class="icon" href="https://github.com/brandogn">G</a>
+        <a class="icon" href="https://github.com/brandogn">L</a>
+      </nav>
+
+      <!-- Body -->
+      <div class="body">
         <h1>• Brandon Wogn •</h1>
-        <p><a href="#">About Me</a></p>
-        <p><a href="#">My Projects</a></p>
-        <p><a href="#">Art</a></p>
-        <p><a href="#">Special</a></p>
-        <img id="sbImg" src="img/strawberry.png" alt="cat" />
+        <h6><a href="about.html">About Me</a></h6>
+        <h6><a href="projects.html">My Projects</a></h6>
+        <h6><a href="contact.html">Contact</a></h6>
+        <h6><a href="deez.html">Special</a></h6>
+        <img id="sbImg" src="assets/img/strawberry.png" alt="cat" />
       </div>
 
+      <!-- Footer -->
       <div class="footer">© DEIMOTOAD</div>
     </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/colors.js"></script>
   </body>
 </html>
