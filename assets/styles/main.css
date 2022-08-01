@@ -1,0 +1,122 @@
+@import url(debug.css);
+
+@font-face {
+  font-family: "MS-Font";
+  src: url("../MS_PAIN.woff") format("truetype");
+  /* TODO: Var-fonts */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+:root {
+--content-padding: 10vh;
+
+  --L-font: 40px;
+  --XL-font: 50px;
+  --N-font: 25px;
+  --XS-font: 10px;
+
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  /* font-family: "MS-Font"; */
+  font-size: var(--N-font);
+  padding: 10px;
+}
+
+/* ========== Unsetting Defaults ========== */
+
+button {
+  border: unset;
+  background-color: unset;
+  font-family: unset;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ========== Generalized styles ========== */
+
+.center,
+.center * {
+  text-align: center;
+}
+
+/* ========== Main dividers + layout setup ========== */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: min(1000px, 100%);
+  margin: auto;
+}
+
+.content,
+.footer {
+  margin-top: var(--content-padding);
+}
+
+.push {
+  flex: 1;
+}
+
+/* ======================================== */
+
+/* Top Bar */
+
+nav {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content */
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  width: min(600px, 100%);
+}
+
+/* Footer */
+
+.footer {
+  min-height: var(--content-padding);
+  font-size: var(--XS-font);
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    min-height: 0;
+  }
+/* 
+  .body {
+    margin-top: 0;
+  } */
+}
+
+/* ========== Specific stylings below ========== */
