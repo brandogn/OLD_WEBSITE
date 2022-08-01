@@ -1,4 +1,4 @@
-.top-bar {
+/* .top-bar {
     background-color: rgb(236, 211, 236);
 }
 
@@ -16,5 +16,8 @@
 
 .icon {
     background-color: pink;
-}
+} */
 
+* {
+    border: solid 1px black;
+}

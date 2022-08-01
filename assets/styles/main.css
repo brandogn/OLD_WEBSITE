@@ -10,21 +10,21 @@
   margin: 0;
   padding: 0;
   cursor: default;
+  font-size: var(--N-font);
 }
 
 :root {
---content-padding: 10vh;
-
-  --L-font: 40px;
   --XL-font: 50px;
-  --N-font: 25px;
-  --XS-font: 10px;
+  --L-font: 40px;
+  --M-font: 30px;
+  --N-font: 20px;
+  --XS-font: 12px;
+  --icon-size: 40px;
+  --pad: 10px;
 
   background-color: var(--bg-color);
   color: var(--font-color);
   /* font-family: "MS-Font"; */
-  font-size: var(--N-font);
-  padding: 10px;
 }
 
 /* ========== Unsetting Defaults ========== */
@@ -43,7 +43,8 @@ a {
   text-decoration: none;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   cursor: pointer;
 }
 
@@ -52,49 +53,52 @@ img {
   user-select: none;
 }
 
-/* ========== Generalized styles ========== */
-
-.center,
-.center * {
-  text-align: center;
-}
-
 /* ========== Main dividers + layout setup ========== */
 
 .main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: min(1000px, 100%);
   margin: auto;
-}
-
-.content,
-.footer {
-  margin-top: var(--content-padding);
 }
 
 .push {
   flex: 1;
 }
 
-/* ======================================== */
+.footer {
+  margin-top: 10vh;
+}
 
-/* Top Bar */
+/* ========== Top Bar ========== */
+
+.top-bar {
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start; */
+  position: fixed;
+  top: var(--pad);
+  align-self: flex-start;
+  /* FIXME make it var(--pad) left of main */
+}
 
 nav {
   display: flex;
 }
 
 .icon {
-  display: flex;
-  height: 40px;
-  width: 40px;
-  justify-content: center;
-  align-items: center;
+  height: var(--icon-size);
+  width: var(--icon-size);
 }
 
-/* Content */
+/* ========== Content ========== */
+
+.full {
+  min-height: calc(100vh - var(--icon-size) * 4);
+  flex-direction: column;
+  padding: calc(var(--icon-size) * 2) var(--pad);
+}
 
 .text {
   margin-left: auto;
@@ -102,21 +106,69 @@ nav {
   width: min(600px, 100%);
 }
 
-/* Footer */
+/* ========== Footer ========== */
 
 .footer {
-  min-height: var(--content-padding);
-  font-size: var(--XS-font);
+  min-height: 10vh;
+  padding: var(--pad);
 }
 
+/* ========== Mobile ========== */
+
 @media screen and (max-width: 650px) {
+  /* .content {
+    margin-top: 5vw;
+  } */
   .footer {
     min-height: 0;
   }
-/* 
-  .body {
-    margin-top: 0;
-  } */
 }
 
-/* ========== Specific stylings below ========== */
+/* ==================== Misc Stuff Below ==================== */
+
+/* ========== Specific stylings ========== */
+
+#sbImg {
+  width: 200px;
+  mix-blend-mode: difference;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* margin: 25px; */
+  /* TODO: fix coloring of strawwwwbery */
+}
+
+/* ========== Generalized styles ========== */
+
+.center {
+  text-align: center;
+}
+
+.center-items,
+.icon,
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.XS {
+  font-size: var(--XS-font);
+}
+
+.M {
+  font-size: var(--M-font);
+}
+
+.L {
+  font-size: var(--L-font);
+}
+
+.XL {
+  font-size: var(--XL-font);
+}
