@@ -58,6 +58,10 @@
   width: var(--icon-size);
 }
 
+.color-selector:hover {
+  
+}
+
 /* ========== Content ========== */
 
 .content {
