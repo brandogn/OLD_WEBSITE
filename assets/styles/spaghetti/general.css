@@ -1,0 +1,73 @@
+/* ========== Unsetting Defaults ========== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: unset;
+  background-color: unset;
+  font-family: unset;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ========== Generalized styles ========== */
+
+
+.center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.center-items,
+.icon,
+.content, .box, .proj-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bolder;
+  font-variation-settings: 'wght' 1;
+}
+
+.XS {
+  font-size: var(--XS-font);
+  font-variation-settings: 'wght' 1;
+}
+
+.M {
+  font-size: var(--M-font);
+  font-variation-settings: 'wght' 1;
+}
+
+.L {
+  font-size: var(--L-font);
+  font-variation-settings: 'wght' 1;
+}
+
+.XL {
+  font-size: var(--XL-font);
+  font-variation-settings: 'wght' 1000;
+}

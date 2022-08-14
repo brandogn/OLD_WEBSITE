@@ -1,0 +1,16 @@
+/* default: */
+:root {
+    --bg-color: #020202;
+    --font-color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: "MS-Font";
+    src: url("../Font/MS_PAIN.woff") format("truetype");
+    /* TODO: Var-fonts */
+}
+
+@font-face {
+    font-family: "Vollkorn";
+    src: url("../Font/Vollkorn/static/Vollkorn-Medium.ttf");
+}

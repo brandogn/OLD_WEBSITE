@@ -1,0 +1,22 @@
+:root {
+    --XL-font: 60px;
+    --L-font: 40px;
+    --M-font: 40px;
+    --N-font: 25px;
+    --S-font: 15px;
+    --XS-font: 12px;
+    --icon-size: 50px;
+    --pad: 5px;  
+}
+
+@media screen and (max-width: 650px) {
+    :root {
+        --XL-font: 45px;
+        --L-font: 37px;
+        --M-font: 30px;
+        --N-font: 20px;
+        --XS-font: 12px;
+        --icon-size: 50px;
+        --pad: 5px;  
+    }
+}

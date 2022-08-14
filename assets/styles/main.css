@@ -1,0 +1,171 @@
+@import url(spaghetti/vars.css);
+@import url(spaghetti/debug.css);
+@import url(spaghetti/general.css);
+
+@font-face {
+  font-family: "MS-Font";
+  src: url("../MS_PAIN.woff") format("truetype");
+  /* TODO: Var-fonts */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  font-size: var(--N-font);
+}
+
+:root {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: "Vollkorn", "Times New Roman", Times, serif;
+  --content-center: min(600px, 100%);
+}
+
+/* ========== Main dividers + layout setup ========== */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: min(1000px, 100%);
+  margin: auto;
+}
+
+.push {
+  flex: 1;
+}
+
+/* ========== Top Bar ========== */
+
+.top-bar {
+  pointer-events: none;
+  position: fixed;
+  top: var(--pad);
+  width: inherit;
+  align-self: flex-start;
+  /* FIXME make it var(--pad) left of main */
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  pointer-events: visible;
+  font-size: var(--M-font);
+  height: var(--icon-size);
+  width: var(--icon-size);
+}
+
+/* ========== Content ========== */
+
+.content {
+  flex-direction: column;
+}
+
+.content * {
+  margin: 10px 0;
+}
+
+.full {
+  min-height: calc(100vh - var(--icon-size) * 4);
+  padding: calc(var(--icon-size) * 2) var(--pad);
+}
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  /* text-align: justify; */
+  /* width: min(600px, 100%); */
+}
+
+.flex-grid {
+  display: flex;
+  width: min(600px, 100vw);
+}
+
+.box {
+  margin: 10px;
+  flex-direction: column;
+}
+
+/* about me */
+
+.ascii {
+  font-size: var(--S-font);
+  letter-spacing: -2px;
+  /* TODO animations :flushed: */
+}
+
+.line {
+  margin: -0.9px;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+
+/* Projects */
+
+.proj {
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: min(750px, 100vw);
+}
+
+.proj .box {
+  margin: 0;
+  width: 250px;
+  aspect-ratio: 1 / 1;
+}
+
+.proj-icon {
+  width: 125px;
+  height: 125px;
+  border-radius: 3px;
+}
+
+.proj-icon svg {
+  fill: var(--font-color);
+  transform: scale(5);
+}
+
+/* ========== Footer ========== */
+
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10vh;
+  min-height: 10vh;
+  padding: var(--pad);
+}
+
+.footer * {
+  font-size: var(--XS-font);
+}
+
+/* ========== Mobile ========== */
+
+@media screen and (max-width: 650px) {
+  .footer {
+    min-height: 0;
+  }
+}
+
+/* ==================== Misc Stuff Below ==================== */
+
+/* Specfifics below: */
+#sbImg {
+  width: 200px;
+  mix-blend-mode: difference;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* TODO: fix coloring of strawwwwbery */
+}
+
+.hidden {
+  display: none;
+}
