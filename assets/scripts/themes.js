@@ -29,14 +29,32 @@ function changeColor(rule) {
   themeSheet.insertRule(colors[rule], 0);
 }
 
-// Special Button
+let toggled = false;
+function toggleColors() {
+  if (toggled) {
+    changeColor("default");
+  } else {
+    changeColor("cobalt");
+  }
+  document.querySelector(".color-selector").classList.toggle("hidden");
+  toggled = !toggled;
+}
+
+let index = 1;
+function setRandomColor() {
+  const colorKeys = Object.keys(colors);
+  // const color = colorKeys[1 + Math.floor((colorKeys.length - 1) * Math.random())];
+  const color = colorKeys[1 + (index % (colorKeys.length - 1))];
+  console.log(colorKeys, color);
+  changeColor(color);
+  index++;
+}
+
+// ==================== DOM ====================
+
 document
   .getElementById("color-btn")
-  .addEventListener("click", () => changeColor("cobalt"));
-
-document.getElementById("default-btn").addEventListener("click", () => {
-  changeColor("default");
-  document.querySelector(".color-selector").classList.toggle("hidden");
-});
-
-console.log(document.querySelector(".color-selector").classList);
+  .addEventListener("click", () => toggleColors());
+document
+  .querySelector(".color-selector")
+  .addEventListener("click", setRandomColor);

@@ -93,6 +93,7 @@
 /* about me */
 
 .ascii {
+  font-family: "MS-Font";
   font-size: var(--S-font);
   letter-spacing: -2px;
   /* TODO animations :flushed: */
