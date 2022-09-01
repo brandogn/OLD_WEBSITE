@@ -115,8 +115,10 @@
 .proj {
   flex-wrap: wrap;
   justify-content: center;
+  width: min(750px, 100vw); 
+  /* 
   position: relative;
-  width: min(750px, 100vw);
+  */
 }
 
 .proj .box {
